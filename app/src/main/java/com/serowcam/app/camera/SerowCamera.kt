@@ -3,6 +3,7 @@ package com.serowcam.app.camera
 import android.content.ContentValues
 import android.content.Context
 import android.hardware.camera2.CaptureRequest
+import android.content.pm.PackageManager
 import android.os.Build
 import android.provider.MediaStore
 import android.util.Log
@@ -159,7 +160,10 @@ class SerowCamera(
         val capture = videoCapture ?: return
         val file = File(context.cacheDir, "serow_${System.currentTimeMillis()}.mp4")
         val pending = capture.output.prepareRecording(context, FileOutputOptions.Builder(file).build())
-        val prepared = if (prefs.recordAudio) pending.withAudioEnabled() else pending
+        val canAudio = prefs.recordAudio &&
+            ContextCompat.checkSelfPermission(context, android.Manifest.permission.RECORD_AUDIO) ==
+            PackageManager.PERMISSION_GRANTED
+        val prepared = if (canAudio) pending.withAudioEnabled() else pending
         recording = prepared.start(main) { event ->
             when (event) {
                 is VideoRecordEvent.Start -> onRecording(true)
