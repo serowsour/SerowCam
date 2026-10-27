@@ -1,35 +1,21 @@
 # SerowCam
 
-**SerowCam** è un'app fotocamera open-source per Android, fluida, moderna e con funzionalità professionali.
+Open-source Android camera. MIT license.
 
-## Caratteristiche principali
+Fluid preview, photo, video with microphone, and background recording. Pro controls cover zoom, exposure, white balance, grid, self-timer, frame, and video quality.
 
-- Preview fotocamera fluida e ad alta performance (CameraX)
-- Cattura foto ad alta qualità
-- Registrazione video con audio (microfono)
-- Registrazione video in background (Foreground Service)
-- Controlli Pro: ISO, esposizione, focus, bilanciamento del bianco, zoom, flash, risoluzione
-- UI moderna e pulita in Jetpack Compose
-- Gestione permessi completa
-- Open Source con licenza **MIT**
+The interface is English.
 
-## Requisiti
+## Build
 
-- Android 8.0 (API 26) o superiore
-- Android Studio (per sviluppo)
+Open the project in Android Studio, or run:
 
-## Come compilare
+```bash
+./gradlew :app:assembleDebug
+```
 
-1. Clona la repository
-2. Apri in Android Studio
-3. Sync Gradle e build
+GitHub Actions publishes a debug APK on every push to `main`. Download it from the Actions artifacts.
 
-Oppure usa GitHub Actions: ogni push su `main` genera automaticamente l'APK (scaricabile dagli Artifacts).
+## License
 
-## Licenza
-
-MIT License - vedi [LICENSE](LICENSE)
-
-## Contributi
-
-Contributi benvenuti! Apri una Issue o una Pull Request.
+MIT. See [LICENSE](LICENSE).
