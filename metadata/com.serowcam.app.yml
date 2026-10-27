@@ -1,0 +1,36 @@
+Categories:
+  - Multimedia
+License: MIT
+AuthorName: serowsour
+SourceCode: https://github.com/serowsour/SerowCam
+IssueTracker: https://github.com/serowsour/SerowCam/issues
+Changelog: https://github.com/serowsour/SerowCam/releases
+
+AutoName: SerowCam
+Summary: Fluid open-source camera with pro controls and live streaming
+Description: |-
+  SerowCam is an open-source Android camera app.
+
+  Features:
+  * Photo, Video, and Live Stream modes
+  * Pro controls: zoom, exposure, white balance, HDR
+  * Microphone selection
+  * OBS-style sources (text, clock, browser)
+  * RTMP streaming to custom servers
+  * Background recording
+
+RepoType: git
+Repo: https://github.com/serowsour/SerowCam
+
+Builds:
+  - versionName: 2.2.1
+    versionCode: 6
+    commit: v2.2.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 2.2.1
+CurrentVersionCode: 6

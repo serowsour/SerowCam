@@ -1,0 +1,15 @@
+SerowCam is an open-source Android camera app built from scratch with Kotlin and Jetpack Compose.
+
+Features:
+- Full-screen camera preview with modern glass UI
+- Photo, Video, and Live Stream modes
+- Pro controls: zoom, exposure, white balance, HDR, grid, timer
+- Microphone selection and toggles
+- OBS-style sources (text, clock, browser) that can be dragged and resized
+- RTMP streaming to custom servers (including Twitch)
+- Record while streaming
+- Background video recording
+- Sensor megapixel detection
+- Landscape and portrait modes
+
+The app is in early alpha. Report bugs at https://serowsour.canny.io/
